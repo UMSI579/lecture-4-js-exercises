@@ -117,6 +117,7 @@ document.querySelector('#on-click-check').addEventListener('click', (e) => {
     setTimeout(() => {
         const eventOutput = console.logs.slice(-1);
         if (typeof eventOutput[0] !== 'undefined' && typeof eventOutput[0][0] !== 'undefined') {
+           // const eventOutput = console.logs.slice(-1);
             if (eventOutput[0][0] instanceof PointerEvent) {
                 p7.setAttribute("class", "correct");
             }
